@@ -1,0 +1,34 @@
+{
+  "name": "unet/laravel-module",
+  "description": "Laravel module",
+  "type": "laravel-module",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Duc Dao",
+      "email": "huuduc.uneti@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "laravel/framework": "5.5.*"
+  },
+  "require-dev": {
+    "laracasts/flash": "^3.0",
+    "laravelcollective/html": "^5.5",
+    "prettus/l5-repository": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Unet\\": "Unet/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Unet\\Module\\Providers\\ServiceProvider"
+      ]
+    }
+  }
+}
